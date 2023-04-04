@@ -154,3 +154,59 @@ img {
     cursor: pointer;
     background-color: #ffffff2f;
 }
+
+.descubra{
+    background-color: #FC945A;
+    width: 100%;
+    display: flex;
+    
+}
+.descubra-text{
+    flex-direction: column;
+    width: 50%;
+
+}
+
+.descubra h3{
+    width: 30%;
+    font-size: 50px;
+    padding: 30px 30px;
+
+}
+
+.descubra p{
+    font-size: 15px;
+    color: #000;
+    width: 90%;
+    margin: 20px 0;
+    margin-left: 20px;
+
+}
+
+.imagens-descubra{
+    margin: 20px 0;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+.imagens-descubra div{
+    width: 80%;
+    height: 700px;
+    display: flex;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+
+
+}
+
+.imagem-1{
+    background-image: url(/images/Foto1.jpg);
+}
+
+.imagem-2{
+    background-image: url(/images/Foto2.jpg);
+}
