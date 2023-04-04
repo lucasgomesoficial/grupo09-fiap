@@ -23,7 +23,7 @@ ol {
     list-style: none;
 }
 
-a {
+.menu-item {
     text-decoration: none;
     color: var(--color-white);
     font-weight: 700;
@@ -31,7 +31,7 @@ a {
     padding: 10px;
 }
 
-a:hover {
+.menu-item:hover {
     color: var(--color-white);
     background-color:var(--color-pink);                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   ;
     border-radius: var(--border-radius);
@@ -80,6 +80,8 @@ img {
     background-color: #000;
     padding: 15px 30px;
     border-radius: 10px;
+    color: #fff;
+    text-decoration: none;
 }
 
 .menu-span:hover{
@@ -154,3 +156,58 @@ img {
     cursor: pointer;
     background-color: #ffffff2f;
 }
+
+
+
+.footer{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    background-color: #FFDEDE;
+    padding: 88px 239px 50px 206px ;
+}
+
+.footer-itens{
+    justify-content: center;
+}
+
+.footer-main-tit{
+    font-size: 30px;
+    font-weight: 700;
+    margin-top: 50px;
+}
+
+.footer-tit{
+    font-size: 30px;
+    color: rgba(0, 0, 0, 0.43) ;
+    margin-bottom: 33px;
+
+}
+
+.nav-footer{
+   line-height: 50px;
+}
+
+.a-footer{
+    text-decoration: none;
+    color: #000;
+    font-weight: 700;
+
+}
+
+
+.nav-footer-images{
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    cursor: pointer;
+    
+}
+
+
+.img-footer{
+    border-radius: 20px;
+    padding: 10px;
+}
+
+
