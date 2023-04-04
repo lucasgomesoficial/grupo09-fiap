@@ -1,1 +1,62 @@
 @import url('https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Formatações Genéricas */
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* FimFormatações Genéricas */
+
+/* Cabeçalho */
+.header-page {
+    background-color: #FFDEDE;
+    width: auto;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+}
+
+.input-buscar {
+    width: 300px;
+    height: 45px;
+    border-radius: 30px;
+}
+
+.header-menu ul {
+    display: flex;
+}
+
+.header-menu li {
+    margin-left: 30px;
+}
+
+.btn-login {
+    height: 45px;
+    padding: 10px 30px;
+    border-radius: 10px;
+    background-color: black;
+    border: 2px solid black;
+    color: white;
+}
+
+.far fa-heart {
+    width: 25px;
+}
+
+.far fa-heart:hover {
+    color: red;
+}
+
+/* Fim Cabeçalho */
