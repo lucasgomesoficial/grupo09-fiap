@@ -1,3 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  :root {
+    --color-light: #f5f5f5;
+    --color-dark: #27272a;
+    --color-primary: #52525b;
+    --color-secondary: #84cc16;
+  
+    --h1-font-size: 3.8rem;
+    --h2-font-size: 3rem;
+    --h3-font-size: 2rem;
+    --h4-font-size: 1.4rem;
+    --p-font-size: 1rem;
+    --menu-font-size: 0.8rem;
+    --copyright-font-size: 0.7rem;
+  
+    --transition: 0.5s;
+    --border-radius-large: 6rem;
+    --border-radius-medium: 1rem;
+    --border-radius-small: 0.3rem;
+  
+    --font-weight-normal: 400;
+    --font-weight-medium: 500;
+    --font-weight-bold: 700;
+  }
+  
+  body {
+    font-family: "Roboto", sans-serif;
+  }
+  
+  ul,
+  ol {
+    list-style: none;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  button {
+    cursor: pointer;
+  }
 @import url('https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500&display=swap');
 
 * {
@@ -60,3 +106,45 @@ a {
 }
 
 /* Fim Cabeçalho */
+
+/* explore sp*/
+.exploresp{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #FFC4A4;
+}
+
+.exploresp h1 {
+    position: absolute;
+    width: 436px;
+    height: 61px;
+    left: 79px;
+    top: 123px;
+
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 61px;
+    color: #000000;
+}
+.title-span{
+    color: #FF0055;
+
+}
+
+.btn{
+    background-color: #FFFFFF;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    padding: 20px 85px;
+    margin-top: 150px;
+    box-sizing: border-box;
+    position: relative;
+    width: 210px;
+    height: 84px;
+    left: 83px;
+    top: 153px;
+    color: #000000;
+}
+
