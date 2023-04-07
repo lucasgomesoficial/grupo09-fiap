@@ -261,13 +261,55 @@ a {
 /* Fim Onde Hospedar */
 
 /* Footer */
-footer {
-    height: 397px;
+.footer{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
     background-color: #FFDEDE;
+    padding: 88px 239px 50px 206px ;
 }
 
-footer h2 {
+.footer-itens{
+    justify-content: center;
+}
+
+.footer-main-tit{
     font-size: 30px;
     font-weight: 700;
+    margin-top: 50px;
 }
+
+.footer-tit{
+    font-size: 30px;
+    color: rgba(0, 0, 0, 0.43) ;
+    margin-bottom: 33px;
+
+}
+
+.nav-footer{
+   line-height: 50px;
+}
+
+.a-footer{
+    text-decoration: none;
+    color: #000;
+    font-weight: 700;
+
+}
+
+
+.nav-footer-images{
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    cursor: pointer;
+    
+}
+
+
+.img-footer{
+    border-radius: 20px;
+    padding: 10px;
+}
+
 /* Fim Footer */
