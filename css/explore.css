@@ -97,6 +97,7 @@ a {
 
 .test {
     font-size: 25px;
+    left: 81px;
 }
 
 .far fa-heart:hover {
@@ -108,41 +109,165 @@ a {
 /* explore sp*/
 .exploresp {
     width: 100%;
-    min-height: 100vh;
+    min-height: 635px;
     background-color: #FFC4A4;
 }
 
-.exploresp h1 {
+.exploresp h2 {
     position: absolute;
-    width: 436px;
-    height: 61px;
     left: 79px;
     top: 123px;
-
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 61px;
+    font-weight: 800;
+    font-size: 50px;
     color: #000000;
 }
 
 .title-span {
+    font-size: 50px;
     color: #FF0055;
 
 }
 
-.btn {
+.menu-sp {
+    height: 190px;
+    /* border: 2px solid; */
+    margin-bottom: 30px;
+}
+
+.btn-menu {
+    width: 210px;
+    height: 84px;
     background-color: #FFFFFF;
     border: 1px solid #000000;
     border-radius: 10px;
-    padding: 20px 85px;
-    margin-top: 150px;
     box-sizing: border-box;
     position: relative;
-    width: 210px;
-    height: 84px;
     left: 83px;
     top: 153px;
+    padding: 20px 85px;
     color: #000000;
+
 }
+
+.galeriasp {
+    height: 0 387px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: no-wrap;
+    margin: 0 188px;
+    background-color: #D9D9D95C;
+}
+
+.galeriasp img {
+    margin: 31px;
+    /* espaço entre as imagens */
+    max-width: 100%;
+}
+
+/* Fim explore sp*/
+
+/* Sobre SP */
+.sobre-sp {
+    height: 443px;
+    background-color: #FC945A;
+}
+
+.sobre-sp div {
+    width: 760px;
+    height: 420px;
+    margin-left: 79px;
+    padding-top: 27px;
+    /* border: 2px solid; */
+}
+
+.title-sobre-span {
+    font-size: 30px;
+    font-weight: 700;
+    color: #FF0055;
+
+}
+
+.sobre-sp h3 {
+    top: 123px;
+    font-weight: 700;
+    font-size: 30px;
+    color: #000000;
+    margin: 0 15px;
+}
+
+.sobre-sp p {
+    font-size: 15px;
+    font-weight: 600;
+    margin: 15px;
+}
+
+/* Fim Sobre SP */
+
+/* Onde Hospedar */
+
+.onde-hospedar {
+    height: 410px;
+    background-color: #FFC4A4;
+}
+
+.onde-hospedar h3 {
+    top: 123px;
+    font-weight: 700;
+    font-size: 30px;
+    color: #000000;
+    margin: 0 79px;
+    padding-top: 37px;
+}
+
+.hotel-name {
+    font-size: 15px;
+    font-weight: 700;
+}
+
+#hotel-carousel .carousel-inner {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+#hotel-carousel .carousel-item {
+    flex-basis: 20%;
+    margin: 17px;
+}
+
+@media (max-width: 767px) {
+
+    /* Para dispositivos móveis, alterne o display para block e defina a largura dos itens para 100% */
+    #hotel-carousel .carousel-inner {
+        display: block;
+    }
+
+    #hotel-carousel .carousel-item {
+        flex-basis: 100%;
+        margin-right: 0;
+    }
+}
+
+.btn-primary-more-info-btn {
+    width: 200px;
+    height: 40px;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 700;
+    background-color: transparent;
+}
+
+/* Fim Onde Hospedar */
+
+/* Footer */
+footer {
+    height: 397px;
+    background-color: #FFDEDE;
+}
+
+footer h2 {
+    font-size: 30px;
+    font-weight: 700;
+}
+/* Fim Footer */
