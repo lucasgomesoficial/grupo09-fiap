@@ -63,9 +63,9 @@ a {
 
 /* Cabeçalho */
 .header-page {
-    background-color: #FFDEDE;
-    width: auto;
-    height: 90px;
+    background-color: var(--color-primary100);
+    width: 100vw;
+    height: 10vh;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -73,13 +73,15 @@ a {
 }
 
 .input-buscar {
-    width: 300px;
-    height: 45px;
-    border-radius: 30px;
+    width: 20vw;
+    height: 6vh;
+    border-radius: var(--border-radius-large);
 }
 
 .header-menu ul {
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .header-menu li {
@@ -89,10 +91,10 @@ a {
 .btn-login {
     height: 45px;
     padding: 10px 30px;
-    border-radius: 10px;
-    background-color: black;
-    border: 2px solid black;
-    color: white;
+    border-radius: var(--border-radius-small);
+    background-color: var(--color-dark);
+    border: 2px solid var(--color-dark);
+    color: var(--color-light);
 }
 
 .test {
@@ -100,16 +102,17 @@ a {
     left: 81px;
 }
 
-.far fa-heart:hover {
+.test:hover {
     color: red;
+    /* Substituir o efeito */
 }
 
 /* Fim Cabeçalho */
 
 /* explore sp*/
 .exploresp {
-    width: 100%;
-    min-height: 635px;
+    width: 100vw;
+    min-height: 68vh;
     background-color: #FFC4A4;
 }
 
@@ -118,40 +121,43 @@ a {
     left: 79px;
     top: 123px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-weight: 800;
+    font-weight: var(--font-weight-bold);
     font-size: 50px;
-    color: #000000;
+    color: var(--color-dark);
 }
 
 .title-span {
     font-size: 50px;
-    color: #FF0055;
+    color: var(--color-primary900);
 
 }
 
 .menu-sp {
-    height: 190px;
-    /* border: 2px solid; */
+    /* Adicionar Icones no Menu */
+    width: 100vw;
+    height: 20vh;
     margin-bottom: 30px;
 }
 
 .btn-menu {
     width: 210px;
     height: 84px;
-    background-color: #FFFFFF;
-    border: 1px solid #000000;
-    border-radius: 10px;
+    background-color: var(--color-light);
+    border: 1px solid var(--color-dark);
+    border-radius: var(--border-radius-small);
     box-sizing: border-box;
     position: relative;
     left: 83px;
     top: 153px;
     padding: 20px 85px;
-    color: #000000;
+    color: var(--color-dark);
+    margin-right: 20px;
 
 }
 
 .galeriasp {
-    height: 0 387px;
+    width: 80vw;
+    height: 40vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -162,7 +168,6 @@ a {
 
 .galeriasp img {
     margin: 31px;
-    /* espaço entre as imagens */
     max-width: 100%;
 }
 
@@ -170,8 +175,8 @@ a {
 
 /* Sobre SP */
 .sobre-sp {
-    height: 443px;
-    background-color: #FC945A;
+    height: 47vh;
+    background-color: var(--color-secondary);
 }
 
 .sobre-sp div {
@@ -183,23 +188,23 @@ a {
 }
 
 .title-sobre-span {
-    font-size: 30px;
-    font-weight: 700;
-    color: #FF0055;
+    font-size: var(--h2-font-size);
+    font-weight: var(--font-weight-bold);
+    color: var(--color-primary900);
 
 }
 
-.sobre-sp h3 {
+.sobre-sp h2 {
     top: 123px;
-    font-weight: 700;
-    font-size: 30px;
-    color: #000000;
+    font-weight: var(--font-weight-bold);
+    font-size: var(--h2-font-size);
+    color: var(--color-dark);
     margin: 0 15px;
 }
 
 .sobre-sp p {
-    font-size: 15px;
-    font-weight: 600;
+    font-size: var(--p-font-size-large);
+    font-weight: var(--font-weight-medium);
     margin: 15px;
 }
 
@@ -208,22 +213,25 @@ a {
 /* Onde Hospedar */
 
 .onde-hospedar {
-    height: 410px;
+    width: 100vw;
+    height: 42vh;
     background-color: #FFC4A4;
 }
 
-.onde-hospedar h3 {
+.onde-hospedar h2 {
     top: 123px;
-    font-weight: 700;
-    font-size: 30px;
-    color: #000000;
+    font-weight: var(--font-weight-bold);
+    font-size: var(--h2-font-size);
+    color: var(--color-dark);
     margin: 0 79px;
     padding-top: 37px;
 }
 
+/* .carousel-slide {} */
+
 .hotel-name {
-    font-size: 15px;
-    font-weight: 700;
+    font-size: var(--h3-font-size);
+    font-weight: var(--font-weight-medium);
 }
 
 #hotel-carousel .carousel-inner {
@@ -261,54 +269,54 @@ a {
 /* Fim Onde Hospedar */
 
 /* Footer */
-.footer{
+.footer {
     width: 100%;
     display: flex;
     justify-content: space-around;
-    background-color: #FFDEDE;
-    padding: 88px 239px 50px 206px ;
+    background-color: var(--color-primary100);
+    padding: 88px 239px 50px 206px;
 }
 
-.footer-itens{
+.footer-itens {
     justify-content: center;
 }
 
-.footer-main-tit{
-    font-size: 30px;
-    font-weight: 700;
+.footer-main-tit {
+    font-size: var(--h2-font-size);
+    font-weight: var(--font-weight-bold);
     margin-top: 50px;
 }
 
-.footer-tit{
-    font-size: 30px;
-    color: rgba(0, 0, 0, 0.43) ;
+.footer-tit {
+    font-size: var(--h2-font-size);
+    color: rgba(0, 0, 0, 0.43);
     margin-bottom: 33px;
 
 }
 
-.nav-footer{
-   line-height: 50px;
+.nav-footer {
+    line-height: 50px;
 }
 
-.a-footer{
+.a-footer {
     text-decoration: none;
-    color: #000;
-    font-weight: 700;
+    color: var(--color-dark);
+    font-weight: var(--font-weight-bold);
 
 }
 
 
-.nav-footer-images{
+.nav-footer-images {
     width: 80%;
     display: flex;
     justify-content: space-around;
     cursor: pointer;
-    
+
 }
 
 
-.img-footer{
-    border-radius: 20px;
+.img-footer {
+    border-radius: var(--border-radius-small);
     padding: 10px;
 }
 
