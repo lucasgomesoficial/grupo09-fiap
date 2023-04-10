@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap');
 
 * {
     margin: 0;
@@ -8,14 +8,36 @@
 
 
 :root {
-    --color-white: #ffffff;
-    --color-pink: #ff0055;
-    --border-radius: 5px;
-    --transition: .5s;
+    --color-light: #ffffff;
+    --color-dark: #000000;
+    --color-primary900: #ff0055;
+    --color-primary100: #ffdede;
+    --color-secondary: #fc945a;
+
+    --h1-font-size: 3.125rem;
+    --h2-font-size: 1.875rem;
+    --h3-font-size: 1.25rem;
+    --h4-font-size: 0.938rem;
+
+    --p-font-size-large: 0.938rem;
+    --p-font-size-medium: 0.625rem;
+    --p-font-size-small: 0.5rem;
+
+    --transition: 0.5s;
+
+    --border-radius-large: 3rem;
+    --border-radius-medium: 1.875rem;
+    --border-radius-small: 0.625rem;
+
+    --font-weight-normal: 400;
+    --font-weight-medium: 600;
+    --font-weight-bold: 700;
+
+    --font-family: "Inter", sans-serif;
 }
 
 body {
-    font-family: 'Golos Text', sans-serif;
+    font-family: 'Inter', sans-serif;
 }
 
 ul,
@@ -25,17 +47,17 @@ ol {
 
 a {
     text-decoration: none;
-    color: var(--color-white);
+    color: var(--color-light);
     font-weight: 700;
     transition: color var(--transition);
     padding: 10px;
 }
 
 a:hover {
-    color: var(--color-white);
-    background-color: var(--color-pink);
+    color: var(--color-light);
+    background-color: var(--color-primary900);
     ;
-    border-radius: var(--border-radius);
+    border-radius: var(--border-radius-small);
 }
 
 img {
@@ -46,6 +68,7 @@ img {
     display: flex;
     margin: 5px;
     align-items: center;
+    color: var(--color-light);
 }
 
 .header {
@@ -65,9 +88,11 @@ img {
 .header-menu ul {
     display: flex;
     align-items: center;
-    background-color: #ffffff17;
-    border-radius: 10px;
-    width: 97%;
+    border-radius: var(--border-radius-small);
+    width: 100%;
+    height: 50px;
+    background-color: #ffffff35;
+
 }
 
 
@@ -75,29 +100,34 @@ img {
     text-decoration: none;
     margin-left: 10px;
     padding: 15px;
+
 }
 
-.menu-span {
-    background-color: #000;
-    padding: 15px 30px;
-    border-radius: 10px;
+.login {
+    background-color: var(--color-dark);
+    border-radius: var(--border-radius-small);
+    color: var(--color-light);
+    text-decoration: none;
+    box-shadow: none;
+    border: none;
+    padding: 10px 20px;
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    height: 50px;
+    width: 150px;
+    text-align: center;
+    margin: 10px 20px;
 }
 
-.menu-span:hover {
+.login:hover {
     cursor: pointer;
     background-color: #ffffff77;
 }
 
 .header-title {
-    color: var(--color-white);
+    color: (var--color-light);
     font-size: 20px;
     text-align: left;
-}
-
-#air {
-    color: white;
-    padding: 20px;
-    font-size: 30px;
 }
 
 .first {
@@ -107,12 +137,12 @@ img {
         url(../images/paisagem9.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: 50%;
+    background-position: 100%;
     display: flex;
     flex-direction: column;
     align-items: left;
     justify-content: center;
-    color: var(--color-white);
+    color: var(--color-light);
     text-align: left;
 }
 
@@ -120,14 +150,14 @@ img {
 
 .first h2 {
     font-size: 8vmin;
-    color: var(--color-pink);
+    color: var(--color-primary900);
     margin-left: 20px;
-    width: 40%;
+    width: 60%;
 }
 
 .first p {
     font-size: 15px;
-    color: var(--color-white);
+    color: var(--color-light);
     width: 50%;
     margin: 20px 0;
     margin-left: 20px;
@@ -138,9 +168,9 @@ img {
 
 .btn {
     border: 1px solid #fff;
-    border-radius: 10px;
+    border-radius: var(--border-radius-small);
     font-size: 15px;
-    color: var(--color-white);
+    color: var(--color-light);
     width: 200px;
     height: 40px;
     cursor: pointer;
@@ -157,9 +187,10 @@ img {
 }
 
 .descubra {
-    background-color: #FC945A;
+    background-color: var(--color-secondary);
     width: 100%;
     display: flex;
+    gap: 82px;
 
 }
 
@@ -174,12 +205,12 @@ img {
     font-size: 50px;
     padding: 30px 30px;
     margin-top: 70px;
-
+    font-weight: bold;
 }
 
 .descubra p {
     font-size: 15px;
-    color: #000;
+    color: var(--color-dark);
     width: 90%;
     margin: 20px 0;
     margin-left: 20px;
@@ -187,11 +218,10 @@ img {
 }
 
 .imagem-descubra1 {
-    margin: 20px 0;
+    margin: 10px 0;
     width: 100%;
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
 }
 
 .imagem-descubra1 div {
@@ -200,12 +230,15 @@ img {
     display: flex;
     background-repeat: no-repeat;
     background-size: cover;
-    border-radius: 10px;
+    border-radius: var(--border-radius-small);
     background-position: 100%;
+    flex-wrap: wrap;
 }
 
 .imagem1 {
     background-image: url(/images/Foto1.jpg);
+    max-width: 100%;
+
 }
 
 .imagem1:hover {
@@ -214,55 +247,172 @@ img {
 }
 
 .descubra2 {
-    background-color: #FC945A;
+    background-color: var(--color-secondary);
     width: 100%;
     display: flex;
 }
 
 .imagem-descubra234 {
-    margin: 20px 0;
-    width: 100%;
+    width: 95%;
     display: flex;
     justify-content: center;
+    margin: 10px auto;
+    padding: 10px;
 }
 
 .imagem-descubra234 div {
-    width: 90%;
+    width: 50%;
     min-height: 80vh;
-    display: flex;
     background-repeat: no-repeat;
     background-size: cover;
-    border-radius: 10px;
+    border-radius: var(--border-radius-small);
     background-position: 100%;
-    margin: 30px 10px;
-
+    margin: 0 10px;
+    padding: 10px;
 }
 
 .imagem2 {
     background-image: url(/images/Foto2.jpg);
+    max-width: 100%;
 }
 
 
 .imagem2:hover {
     transform: scale(0.9);
-
 }
 
 .imagem3 {
     background-image: url(/images/Foto3.jpg);
+    max-width: 100%;
 }
 
 
 .imagem3:hover {
     transform: scale(0.9);
-
 }
 
 .imagem4 {
     background-image: url(/images/Foto4.jpg);
+    max-width: 100%;
 }
 
 
 .imagem4:hover {
     transform: scale(0.9);
+}
+
+@media (max-width: 1000px) {
+
+    .header {
+        width: 100%;
+        padding: 0 0px;
+    }
+
+
+    .header-menu ul {
+        flex-direction: column;
+        background-color: #00000000;
+
+    }
+
+    .header-menu li {
+        padding: 0px;
+        justify-content: center;
+        width: 50%;
+        align-items: center;
+        display: flex;
+        font-size: 15px;
+
+    }
+
+    .logo {
+        font-size: 15px;
+        margin: 0 20px;
+    }
+
+
+    .first {
+        width: 100%;
+        min-height: 100vh;
+        background-image: linear-gradient(45deg, rgba(255, 64, 0, 0.067), rgba(247, 97, 27, 0.569)),
+            url(../images/paisagem9.jpg);
+        background-size: cover;
+        background-position: 30%;
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        justify-content: center;
+        color: var(--color-light);
+        text-align: left;
+    }
+
+
+    .first h2 {
+        width: 50%;
+        font-size: 30px;
+        font-weight: 3000;
+
+
+    }
+
+    .first p {
+        width: 80%;
+        font-size: 10px;
+
+    }
+
+    .btn {
+        width: 150px;
+    }
+
+    .login {
+        width: 110px;
+        font-size: 10px;
+        text-align: center;
+    }
+
+    .descubra {
+        flex-direction: column;
+    }
+
+    .descubra h3 {
+        width: 10%;
+        font-size: 40px;
+        padding: 10px;
+        margin: 10px;
+        }
+
+    .descubra p {
+        display: none;
+    }
+
+
+
+    .imagem-descubra1 div {
+        width: 100%;
+        background-position: 20%;
+        margin: 10px;
+    }
+
+    .descubra2{
+        width: 100%;
+        justify-content: center;
+    }
+
+
+    .imagem-descubra234 {
+        flex-direction: column;
+
+    }
+
+    .imagem-descubra234 div{
+        width: 100%;
+        margin: 5px;
+        background-position: 50%;
+
+    }
+
+  
+    
+
 }
