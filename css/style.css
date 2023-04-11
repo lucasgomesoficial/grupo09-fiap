@@ -5,11 +5,12 @@
 }
 
 :root {
-  --color-light: #ffffff;
+  --color-light: #FFFFFF;
   --color-dark: #000000;
-  --color-primary900: #ff0055;
-  --color-primary100: #ffdede;
-  --color-secondary: #fc945a;
+  --color-primary900: #FF0055;
+  --color-primary100: #FFDEDE;
+  --color-secondary900: #FC945A;
+  --color-secondary100: #FFC4A4;
 
   --h1-font-size: 3.125rem;
   --h2-font-size: 1.875rem;
