@@ -72,10 +72,19 @@ a {
     padding: 0 50px;
 }
 
+.input-group-text {
+    border: none;
+    font-size: 20px;
+    position: absolute;
+    padding: 2.5vh 1.5vw;
+}
+
 .input-buscar {
     width: 20vw;
     height: 8vh;
     border-radius: var(--border-radius-large);
+    text-align: center;
+    border: 1px solid;
 }
 
 .header-menu ul {
@@ -134,7 +143,7 @@ a {
 .menu-sp {
     /* Adicionar Icones no Menu */
     width: auto;
-    height: 25vh;
+    height: 23vh;
     margin-bottom: 30px;
     /* border: 2px solid; */
     display: flex;
@@ -146,23 +155,23 @@ a {
     background-color: var(--color-light);
     border: 1px solid var(--color-dark);
     border-radius: var(--border-radius-small);
-    /* box-sizing: border-box; */
     position: relative;
     left: 79px;
     top: 15vh;
     padding: 20px;
-    color: var(--color-dark);
     text-align: center;
     text-decoration: solid;
     font-weight: var(--font-weight-bold);
-    /* justify-content: center; */
-    /* align-items: center; */
     margin: 0 0 0 1vw;
+}
+
+.btn-menu a {
+    color: var(--color-dark);
 }
 
 .galeriasp {
     width: 90vw;
-    height: 50vh;
+    height: 53vh;
     display: flex;
     justify-content: center;
     align-items: center;
