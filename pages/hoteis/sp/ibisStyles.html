@@ -51,7 +51,7 @@
         <div class="context-titleHeader">
           <div class="context-title">
             <img
-              class="img-ibisStyles"
+              class="img-hoteis"
               src="../../../images/ibisHotel.png"
               alt="Hotel Ibis Styles"
             />
@@ -93,8 +93,8 @@
             <hr />
             <div class="about-content">
               <div class="rankingDescription">
-                <div class="raking">
-                  <p>4,0 Muito bom</p>
+                <div class="ranking">
+                  <p class="note-ranking"><span>4,0</span> Muito bom</p>
                   <p>
                     <span>
                       <i class="fa-solid fa-star"></i>
@@ -132,7 +132,7 @@
                     Custo-benefício
                   </p>
                 </div>
-                <p>
+                <p class="text-description">
                   Embarque, literalmente, em uma experiência diferenciada,
                   confortável e com ótima relação custo-benefício no ibis Styles
                   São Paulo Anhembi. Com design moderno e decoração inspirada no
@@ -143,7 +143,7 @@
                   famílias e quartos para pessoas com mobilidade reduzida.
                   Pronto para decolar?
                 </p>
-                <p>
+                <p class="text-description">
                   Quem visita São Paulo a negócios pode contar com a facilidade
                   de se hospedar perto de dois grandes centros de convenções: o
                   Expo Center Norte, a 3,6 km, e o Centro de Convenções do
@@ -156,11 +156,73 @@
                 </p>
               </div>
               <div class="services">
-                <div class="establishment">
-                  <h3>Serviços do estabelecimento</h3>
+                <div>
+                  <h4>Serviços do estabelecimento</h4>
+                  <ul>
+                    <li>
+                      <i class="fa-sharp fa-solid fa-p"></i>
+                      <p>Estacionamento pago e privativo no local</p>
+                    </li>
+                    <li>
+                      <i class="fa-sharp fa-solid fa-shield"></i>
+                      <p>Estacionamento seguro</p>
+                    </li>
+                    <li>
+                      <i class="fa-solid fa-wifi"></i>
+                      <p>
+                        Internet sem fio gratuita e de alta velocidade (WiFi)
+                      </p>
+                    </li>
+                    <li>
+                      <i class="fa-solid fa-martini-glass"></i>
+                      <p>Bar/lounge</p>
+                    </li>
+                    <li>
+                      <i class="fa-solid fa-suitcase-rolling"></i>
+                      <p>Armazenamento de bagagem</p>
+                    </li>
+                    <li>
+                      <i class="fa-solid fa-soap"></i>
+                      <p>Serviço de lavanderia</p>
+                    </li>
+                    <li>
+                      <i class="fa-solid fa-clipboard-user"></i>
+                      <p>Recepção 24 horas</p>
+                    </li>
+                  </ul>
                 </div>
-                <div class="bedrooms">
-                  <h3>Comodidades nos quartos</h3>
+                <div>
+                  <h4>Comodidades nos quartos</h4>
+                  <ul>
+                    <li>
+                      <i class="fa-solid fa-snowflake"></i>
+                      <p>Ar-condicionado</p>
+                    </li>
+                    <li>
+                      <i class="fa-solid fa-hands-bubbles"></i>
+                      <p>Serviço de limpeza</p>
+                    </li>
+                    <li>
+                      <i class="fa-solid fa-lock"></i>
+                      <p>Cofre</p>
+                    </li>
+                    <li>
+                      <i class="fa-solid fa-phone"></i>
+                      <p>Telefone</p>
+                    </li>
+                    <li>
+                      <i class="fa-solid fa-wine-bottle"></i>
+                      <p>Frigobar</p>
+                    </li>
+                    <li>
+                      <i class="fa-solid fa-tv"></i>
+                      <p>TV de tela plana</p>
+                    </li>
+                    <li>
+                      <i class="fa-solid fa-bath"></i>
+                      <p>Banheira/chuveiro</p>
+                    </li>
+                  </ul>
                 </div>
               </div>
             </div>
@@ -168,9 +230,83 @@
           <div class="containerLocationDetails">
             <div class="location">
               <h3>Localização</h3>
+              <hr />
+              <div class="mapLocation">
+                <div class="map">
+                  <iframe
+                    width="100%"
+                    height="100%"
+                    id="gmap_canvas"
+                    src="https://maps.google.com/maps?q=Av. Cruzeiro do Sul, nº 1709&t=&z=17&ie=UTF8&iwloc=&output=embed"
+                    frameborder="0"
+                    scrolling="no"
+                    marginheight="0"
+                    marginwidth="0"
+                  ></iframe>
+                  <div class="mapInfo">
+                    <div class="mapInfoNumber">
+                      <span>136</span>
+                      <span>19</span>
+                    </div>
+                    <div class="mapInfoText">
+                      <p>
+                        restaurantes <br />
+                        em um raio de 1 km
+                      </p>
+                      <p>
+                        atrações <br />
+                        em um raio de 1 km
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="locationInfo">
+                <h4>Como chegar lá</h4>
+                <ul>
+                  <li>
+                    <i class="fa-solid fa-plane-departure"></i>
+                    <p>Congonhas Airport</p>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-plane-departure"></i>
+                    <p>Aeroporto de Aripuanã</p>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-bus"></i>
+                    <p>Portuguesa-Tietê</p>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-bus"></i>
+                    <p>Carandiru</p>
+                  </li>
+                </ul>
+              </div>
             </div>
             <div class="details">
               <h3>Detalhes úteis</h3>
+              <hr />
+              <div class="detailsInfo">
+                <div>
+                  <h4>Idiomas falados <i class="fa-solid fa-globe"></i></h4>
+                  <ul>
+                    <li>
+                      <p>Português</p>
+                    </li>
+                    <li>
+                      <p>Inglês</p>
+                    </li>
+                  </ul>
+                </div>
+                <div>
+                  <h4>Tipo do Hotel <i class="fa-solid fa-hotel"></i></i></h4>
+                  <ul>
+                    <li>
+                      <p>Sustentável</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
         </div>
