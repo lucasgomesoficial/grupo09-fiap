@@ -64,8 +64,8 @@ a {
 /* Cabeçalho */
 .header-page {
     background-color: var(--color-primary100);
-    width: 100vw;
-    height: 10vh;
+    width: auto;
+    height: 15vh;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -74,7 +74,7 @@ a {
 
 .input-buscar {
     width: 20vw;
-    height: 6vh;
+    height: 8vh;
     border-radius: var(--border-radius-large);
 }
 
@@ -89,7 +89,6 @@ a {
 }
 
 .btn-login {
-    height: 45px;
     padding: 10px 30px;
     border-radius: var(--border-radius-small);
     background-color: var(--color-dark);
@@ -111,16 +110,16 @@ a {
 
 /* explore sp*/
 .exploresp {
-    width: 100vw;
-    min-height: 68vh;
+    width: auto;
+    min-height: 85vh;
     background-color: #FFC4A4;
 }
 
 .exploresp h2 {
     position: absolute;
     left: 79px;
-    top: 123px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    top: 18vh;
+    font-family: var(--font-family);
     font-weight: var(--font-weight-bold);
     font-size: 50px;
     color: var(--color-dark);
@@ -134,56 +133,64 @@ a {
 
 .menu-sp {
     /* Adicionar Icones no Menu */
-    width: 100vw;
-    height: 20vh;
+    width: auto;
+    height: 25vh;
     margin-bottom: 30px;
+    /* border: 2px solid; */
+    display: flex;
 }
 
 .btn-menu {
-    width: 210px;
-    height: 84px;
+    width: 15vw;
+    height: 10vh;
     background-color: var(--color-light);
     border: 1px solid var(--color-dark);
     border-radius: var(--border-radius-small);
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
     position: relative;
-    left: 83px;
-    top: 153px;
-    padding: 20px 85px;
+    left: 79px;
+    top: 15vh;
+    padding: 20px;
     color: var(--color-dark);
-    margin-right: 20px;
-
+    text-align: center;
+    text-decoration: solid;
+    font-weight: var(--font-weight-bold);
+    /* justify-content: center; */
+    /* align-items: center; */
+    margin: 0 0 0 1vw;
 }
 
 .galeriasp {
-    width: 80vw;
-    height: 40vh;
+    width: 90vw;
+    height: 50vh;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: no-wrap;
-    margin: 0 188px;
+    margin: auto;
     background-color: #D9D9D95C;
+    /* border: 2px solid; */
 }
 
 .galeriasp img {
-    margin: 31px;
-    max-width: 100%;
+    margin: 2vw;
+    width: 18vw;
 }
 
 /* Fim explore sp*/
 
 /* Sobre SP */
 .sobre-sp {
-    height: 47vh;
+    width: auto;
+    height: 60vh;
     background-color: var(--color-secondary);
 }
 
 .sobre-sp div {
-    width: 760px;
-    height: 420px;
+    width: 60vw;
+    height: 55vh;
     margin-left: 79px;
-    padding-top: 27px;
+    padding-top: 2vh;
     /* border: 2px solid; */
 }
 
@@ -195,17 +202,15 @@ a {
 }
 
 .sobre-sp h2 {
-    top: 123px;
     font-weight: var(--font-weight-bold);
     font-size: var(--h2-font-size);
     color: var(--color-dark);
-    margin: 0 15px;
 }
 
 .sobre-sp p {
     font-size: var(--p-font-size-large);
     font-weight: var(--font-weight-medium);
-    margin: 15px;
+    margin: 1.5vh;
 }
 
 /* Fim Sobre SP */
@@ -213,68 +218,37 @@ a {
 /* Onde Hospedar */
 
 .onde-hospedar {
-    width: 100vw;
-    height: 42vh;
+    width: auto;
+    height: 40vh;
     background-color: #FFC4A4;
 }
 
 .onde-hospedar h2 {
-    top: 123px;
     font-weight: var(--font-weight-bold);
     font-size: var(--h2-font-size);
     color: var(--color-dark);
     margin: 0 79px;
-    padding-top: 37px;
+    padding-top: 2vh;
 }
 
-/* .carousel-slide {} */
-
-.hotel-name {
-    font-size: var(--h3-font-size);
+.onde-hospedar p {
+    width: 15vw;
+    margin: 55px 79px;
+    text-align: center;
+    font-size: var(--p-font-size-large);
     font-weight: var(--font-weight-medium);
-}
-
-#hotel-carousel .carousel-inner {
-    display: flex;
-    flex-wrap: nowrap;
-}
-
-#hotel-carousel .carousel-item {
-    flex-basis: 20%;
-    margin: 17px;
-}
-
-@media (max-width: 767px) {
-
-    /* Para dispositivos móveis, alterne o display para block e defina a largura dos itens para 100% */
-    #hotel-carousel .carousel-inner {
-        display: block;
-    }
-
-    #hotel-carousel .carousel-item {
-        flex-basis: 100%;
-        margin-right: 0;
-    }
-}
-
-.btn-primary-more-info-btn {
-    width: 200px;
-    height: 40px;
-    border-radius: 10px;
-    font-size: 15px;
-    font-weight: 700;
-    background-color: transparent;
+    /* border: 2px solid; */
 }
 
 /* Fim Onde Hospedar */
 
 /* Footer */
 .footer {
-    width: 100%;
+    width: auto;
     display: flex;
     justify-content: space-around;
     background-color: var(--color-primary100);
-    padding: 88px 239px 50px 206px;
+    padding: 3vh;
 }
 
 .footer-itens {
