@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap');
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 :root {
@@ -35,12 +35,12 @@
 }
 
 body {
-    font-family: var(--font-family);
+  font-family: var(--font-family);
 }
 
 ul,
 ol {
-    list-style: none;
+  list-style: none;
 }
 
 a {
@@ -49,6 +49,11 @@ a {
     font-weight: var(--font-weight-bold);
     transition: color var(--transition);
     padding: 15px;
+    text-decoration: none;
+    color: var(--color-light);
+    font-weight: var(--font-weight-bold);
+    transition: color var(--transition);
+    padding: 10px;
 }
 
 
@@ -56,10 +61,13 @@ a:hover {
     color: var(--color-light);
     background-color: #f5e8e837;
     border-radius: var(--border-radius-small);
+    color: var(--color-light);
+    background-color: var(--color-primary900);
+    border-radius: var(--border-radius-small);
 }
 
 img {
-    width: 100%;
+  width: 100%;
 }
 
 .logo {
@@ -444,7 +452,8 @@ img {
     }
 
     @media(max-width: 600px) {
-        .carrossel-mobile img {
+        
+      .carrossel-mobile img {
             height: 30rem;
             width: 50%;
             border-radius: 20px;
@@ -454,6 +463,6 @@ img {
             justify-content: center;
         }
     }
-
-
 }
+
+
