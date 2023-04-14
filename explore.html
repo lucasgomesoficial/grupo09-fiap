@@ -8,45 +8,60 @@
     <title>Explore São Paulo</title>
 
     <link rel="stylesheet" href="./css/explore.css">
+    <link rel="stylesheet" href="./fontawesome-web/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
 </head>
 
 <body>
     <!-- Cabeçalho -->
-    <header class="header-page">
-        <h1 class="header-title">GuTraveller
-            <a href="#"></a>
-        </h1>
-        <div>
-            <span class="input-group-text"><i class="fas fa-search"></i></span>
-            <input class="input-buscar" type="text" placeholder="Pra onde você quer ir?">
+    <header>
+        <div class="header-page">
+            <h2 class="header-title">GuTraveller<a href="#"></a></h2>
+            <div class="inputSearch">
+                <span><i class="fas fa-search" aria-hidden="true"></i></span>
+                <input class="input-buscar" type="text" placeholder="Pra onde você quer ir?">
+            </div>
+
+            <div class="header-menu">
+                <button class="btn-login">Fazer Login</button>
+                <i class="far fa-heart test"></i>
+            </div>
         </div>
-
-        <nav class="header-menu">
-            <ul>
-                <li><a href="#" class="btn-login">Fazer Loging</a></li>
-                <li><i class="far fa-heart test"></i></li>
-            </ul>
-        </nav>
-
     </header>
     <!-- Fim Cabeçalho -->
 
     <!--Explore SP e botoes-->
     <section class="exploresp">
-        <h2 class="title-explore"><span class="title-span">Explore</span> São Paulo</h2>
+        <div class="title-div">
+            <h1 class="title-explore"><span class="title-span">Explore</span> São Paulo</h1>
+        </div>
+
         <div class="menu-sp">
-            <div class="btn-menu"><a href="">Hotéis</a></div>
-            <div class="btn-menu"><a href="">O que fazer?</a></div>
-            <div class="btn-menu"><a href="">Restaurantes</a></div>
-            <div class="btn-menu"><a href="">Voos</a></div>
-            <div class="btn-menu"><a href="">Mais</a></div>
+            <button class="btn-menu">Hotéis
+                <i class="fa-solid fa-bed" style="color: #000000;"></i>
+            </button>
+
+            <button class="btn-menu">O que fazer?
+                <i class="fa-solid fa-snowman" style="color: #000000;"></i>
+            </button>
+            
+            <button class="btn-menu">Restaurantes
+                <i class="fa-solid fa-burger" style="color: #000000;"></i>
+            </button>
+
+            <button class="btn-menu">Voos
+                <i class="fa-solid fa-plane-up" style="color: #000000;"></i>
+            </button>
+
+            <button class="btn-menu-mais">Mais
+                <i class="fa-solid fa-arrow-down" style="color: #000000;"></i>
+            </button>
         </div>
         <div class="galeriasp">
             <img src="./images/galeria-sp/pexels-derick-oliveira-de-lemos-13559247 1.png" alt="">
             <img src="./images/galeria-sp/pexels-eduardo-dutra-3044565 (1) 1.png" alt="">
-            <img src="./images/galeria-sp/pexels-rafael-rodrigues-12717019 1.png" alt="">
             <img src="./images/galeria-sp/pexels-thgusstavo-santana-2860862 1.png" alt="">
+            <img src="./images/galeria-sp/pexels-rafael-rodrigues-12717019 1.png" alt="">
         </div>
     </section>
     <!--Fim Explore SP e botoes-->
