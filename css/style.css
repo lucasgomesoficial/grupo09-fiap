@@ -164,15 +164,24 @@ img {
     padding-top: 30px;
 }
 
+.caixa-planeje{
+    width: 100%;
+}
+
 .topo-planeje{
+    
+    width: 100%;
     display: flex;
-    justify-content: space-around;
-    padding: 50px 30px 50px 30px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 150px 50px 150px;
+    
 }
 
 .menu-span-login{
     background-color: #000;
-    padding: 20px 50px;
+    width: 202px;
+    height: 64px;
     border-radius: 10px;
     color: #fff;
     text-decoration: none;
@@ -191,14 +200,18 @@ img {
 
 .tit-planeje{
     font-size: 40px;
-    margin-right: 500px;
+    
 }
 
 
 .menu-planeje{
+    
+    width: 100%;
     display: flex;
     justify-content: space-between;
-    padding: 0 200px 0 200px;
+    align-items: center;
+    padding: 0 150px 0 150px;
+    
 }
 
 .menu-itens-1,
@@ -218,6 +231,7 @@ img {
 
 .menu-itens-5{
     background: rgba(255, 255, 255, 0.54);
+    font-size: ;
     border: 2px solid #000000;
     border-radius: 10px;
     display: flex;
@@ -243,7 +257,7 @@ img {
     text-align: center;
     display: flex;
     justify-content: center;
-    margin: 20px 200px 0px 200px;
+    margin: 20px 150px 0px 150px;
     height: 324px;
     border-radius: 10px;
     
@@ -284,12 +298,12 @@ img {
 .footer-main-tit{
     font-size: 30px;
     font-weight: 700;
-    margin-top: 50px;
+    margin-top: 60px;
 }
 
 
 .footer-tit{
-    font-size: 30px;
+    font-size: 20px;
     color: rgba(0, 0, 0, 0.43) ;
     text-align: center;
 
@@ -312,29 +326,39 @@ img {
     text-decoration: none;
     color: #000;
     font-weight: 700;
+    font-size: 15px;
 }
 
 .nav-footer-images{
-    width: 100%;
+    
+    width: 270px;
+    height: 143px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-items: center;
     cursor: pointer;   
     margin-top: 15px;
 }
 
 .img-footer{
-    border-radius: 20px;
-    padding: 10px;
-}
-
-.caixa-legenda-blog{
-    display: flex;
+    border-radius: 10px;
+    width: 129px;
     justify-content: space-between;
 }
 
+.caixa-legenda-blog{
+    margin-top: 7px;
+    display: flex;
+    justify-content: space-between;
+
+    
+}
+
 .legenda-blog{
+    
     font-weight: 700;
-    width: 200px;
+    font-size: 10px;
+    width: 138px;
     text-align: center;
 }
 
