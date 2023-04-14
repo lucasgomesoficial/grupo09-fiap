@@ -33,6 +33,7 @@
     --font-family: "Inter", sans-serif;
 }
 
+
 body {
     font-family: var(--font-family);
 }
@@ -60,6 +61,8 @@ a {
 }
 
 /* Fim Formatações Genéricas */
+
+
 
 /* Cabeçalho */
 .header-page {
@@ -350,3 +353,114 @@ a {
 }
 
 /* Fim Footer */
+
+/* responsivo */
+@media  (max-width: 950px) {
+    .header-page {
+        height: auto;
+        padding: 1rem;
+        flex-direction: column;
+        align-items: center;
+        }
+        
+        .inputSearch {
+        width: 90%;
+        }
+        
+        .input-buscar {
+        width: 100%;
+        }
+        
+        .header-menu {
+        margin-top: 1.5rem;
+        }
+        
+        .btn-login {
+        margin-right: 1.5rem;
+        }
+        
+        .title-div {
+        width: 100%;
+        margin-bottom: 1.5rem;
+        }
+        
+        .menu-sp {
+        width: 100%;
+        margin-left: 0;
+        flex-wrap: wrap;
+        justify-content: center;
+        }
+        
+        .btn-menu {
+        width: 45%;
+        margin-right: 1rem;
+        margin-bottom: 1.5rem;
+        }
+        
+        .btn-menu-mais {
+            width: 45%;
+            margin-right: 1rem;
+            margin-bottom: 1.5rem;
+        }
+        }
+
+        @media  (max-width: 950px){
+            .footer{
+            height: auto;
+            padding: 1rem;
+            flex-direction: column;
+            align-items: center;
+            }
+        }
+    
+
+
+    @media (max-width: 768px) {
+        .header-page {
+        height: auto;
+        padding: 1rem;
+        flex-direction: column;
+        align-items: center;
+        }
+        
+        .inputSearch {
+        width: 80%;
+        }
+        
+        .input-buscar {
+        width: 100%;
+        }
+        
+        .header-menu {
+        margin-top: 1rem;
+        }
+        
+        .btn-login {
+        margin-right: 1rem;
+        }
+        
+        .title-div {
+        width: 100%;
+        margin-bottom: 1rem;
+        }
+        
+        .menu-sp {
+        width: 100%;
+        margin-left: 0;
+        flex-wrap: wrap;
+        justify-content: center;
+        }
+        
+        .btn-menu {
+        width: 45%;
+        margin-right: 0.5rem;
+        margin-bottom: 1rem;
+        }
+        
+        .btn-menu-mais {
+            width: 45%;
+            margin-right: 0.5rem;
+            margin-bottom: 1rem;
+        }
+        }
+/* responsivo */
