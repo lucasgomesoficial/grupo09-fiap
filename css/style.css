@@ -204,8 +204,8 @@ img {
 }
 
 
-.menu-planeje{
-    
+.menu-planeje{  
+    border: #000 solid 1px;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -362,3 +362,11 @@ img {
     text-align: center;
 }
 
+
+
+@media (max-width: 767px) {
+    .menu-planeje li {
+      font-size: 0.5rem;
+      
+    }
+}
