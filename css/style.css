@@ -169,12 +169,11 @@ img {
 }
 
 .topo-planeje{
-    
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 50px 150px 50px 150px;
+    padding: 50px 100px 50px 100px;
     
 }
 
@@ -193,11 +192,6 @@ img {
     color: #000;
 }
 
-
-.fa-regular fa-heart{
-    font-size: 100px;
-}
-
 .tit-planeje{
     font-size: 40px;
     
@@ -205,40 +199,36 @@ img {
 
 
 .menu-planeje{  
-    border: #000 solid 1px;
     width: 100%;
+    margin: auto;
+    margin-bottom: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 150px 0 150px;
+    padding: 0 100px 0 100px;
     
 }
 
 .menu-itens-1,
 .menu-itens-2,
 .menu-itens-3,
-.menu-itens-4 {
+.menu-itens-4,
+.menu-itens-5 {
     background: rgba(255, 255, 255, 0.54);
+    height: 10%;
+    width: 18%;
+    margin: auto;
     border: 2px solid #000000;
     border-radius: 10px;
     display: flex;
     justify-content: space-between;
-    flex-basis: 18%;
     padding: 30px 30px 30px 30px;
     font-weight: 700;
     font-size: 18px;
 }
 
 .menu-itens-5{
-    background: rgba(255, 255, 255, 0.54);
-    font-size: ;
-    border: 2px solid #000000;
-    border-radius: 10px;
-    display: flex;
-    justify-content: space-between;
-    flex-basis: 25%;
-    padding: 30px 30px 30px 30px;
-    font-weight: 700;
+    width: 25%;
 }
 
 .menu-itens-1,
@@ -249,17 +239,21 @@ img {
     cursor: pointer;
 }
 
+.container-busca{
+    border: #000 solid 1px;
+    width: 100%;
+}
 
 .planeje-busca{
     background-image: url(/images/fundo-busca.jpeg);
     background-position: center;
     background-size: cover;
-    text-align: center;
     display: flex;
     justify-content: center;
-    margin: 20px 150px 0px 150px;
     height: 324px;
+    width: 89%;
     border-radius: 10px;
+    margin: auto;
     
 }
 
@@ -364,9 +358,244 @@ img {
 
 
 
-@media (max-width: 767px) {
+@media (max-width: 1400px) {
+    
+    .topo-planeje{
+        margin: auto;
+        width: 90vw;
+        padding: 30px 30px 30px 30px;
+        display: flex;
+
+    }
+
+   .tit-planeje{
+    font-size: 2rem;
+   }
+
+   .menu-span-login{
+    font-size: 1rem;
+    width: 15vw;
+   }
+   
+   .menu-planeje{
+    display: flex;
+    width: 100vw;
+    justify-content: space-between;
+    padding: 1% 6% 1% 6%;
+    margin: auto;
+   }
+
+   .menu-itens-1,
+   .menu-itens-2,
+   .menu-itens-3,
+   .menu-itens-4,
+   .menu-itens-5 {
+    width: 16vw;
+    height: 6vh;
+    /* padding: 4% 2% 4% 2%; */
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    padding-bottom: 4%;
+   }
+
     .menu-planeje li {
-      font-size: 0.5rem;
+      display: flex;
+      font-size: 1rem;
+      height: 5vh;
+      width: 50vw;
+      margin: auto;
+    }
+
+    .menu-planeje i {
+        font-size: 1.2rem;   
+    }
+
+    .planeje-busca{
+        font-size: 0.8rem;
+        height: 30vh ;
+        width: 87vw;
+        margin: auto;
+  
+      }
+
+      .busca-itens{
+        font-size: 0.8rem;
+        height: 6vh ;
+        width: 60vw;
+        margin: auto;
+        position: relative;
+        top: 10px;
+      }
       
+
+}
+
+@media (max-width: 1150px) {
+
+    .menu-planeje{
+        display: flex;
+        width: 100vw;
+        justify-content: space-between;
+        padding: 1% 6% 1% 6%;
+        margin: auto;
+       }
+    
+       .menu-itens-1,
+       .menu-itens-2,
+       .menu-itens-3,
+       .menu-itens-4,
+       .menu-itens-5 {
+        width: 16vw;
+        height: 10vh;
+        padding: 5% 1% 5% 1%;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+       }
+    
+        .menu-planeje li {
+          display: flex;
+          font-size: 1rem;
+          height: 3vh;
+          width: 50vw;
+          margin: auto;
+        }
+    
+        .menu-planeje i {
+            font-size: 1.2rem;   
+        }
+
+
+}
+
+@media (max-width: 768px) {
+   
+    .topo-planeje{
+        
+        margin: auto;
+        width: 100vw;
+        padding: 30px 30px 30px 30px;
+        display: flex;
+
+    }
+
+   .tit-planeje{
+    font-size: 1.5rem;
+   }
+
+   .menu-span-login{
+    font-size: 1rem;
+    width: 20vw;
+   }
+   
+   .menu-planeje{
+    display: flex;
+    width: 100vw;
+    justify-content: space-between;
+    padding: 1% 6% 1% 6%;
+    margin: auto;
+   }
+
+   .menu-itens-1,
+   .menu-itens-2,
+   .menu-itens-3,
+   .menu-itens-4,
+   .menu-itens-5 {
+    width: 16vw;
+    height: 10vh;
+    padding: 5% 1% 5% 1%;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+   }
+
+    .menu-planeje li {
+      display: flex;
+      font-size: 0.8rem;
+      height: 3vh;
+      width: 50vw;
+      margin: auto;
+    }
+
+    .menu-planeje i {
+        font-size: 1.2rem;   
+    }
+
+    .planeje-busca{
+        font-size: 0.8rem;
+        height: 30vh ;
+        width: 90vw;
+        margin: auto;
+  
+      }
+
+      .busca-itens{
+        font-size: 0.8rem;
+        height: 6vh ;
+        width: 60vw;
+        margin: auto;
+        position: relative;
+        top: 10px;
+      }
+
+}
+
+@media (max-width: 600px) {
+    .topo-planeje{
+        margin: auto;
+        width: 100vw;
+        padding: 30px 30px 30px 30px;
+        display: flex;
+    }
+
+   .tit-planeje{
+    font-size: 1.7rem;
+    width: 60vw;
+   }
+
+   .menu-span-login{
+    font-size: 0.8rem;
+    width: 20vw;
+   }
+   
+   .menu-planeje{
+    display: flex;
+    width: 100vw;
+    justify-content: space-between;
+    padding: 1% 6% 1% 6%;
+    margin: auto;
+    margin-bottom: 2%;
+   }
+
+   .menu-itens-1,
+   .menu-itens-2,
+   .menu-itens-3,
+   .menu-itens-4,
+   .menu-itens-5 {
+    width: 16vw;
+    height: 9vh;
+    padding: 5% 1% 5% 1%;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+   }
+
+   .menu-itens-3{
+    width: 20vw;
+   }
+
+    .menu-planeje li {
+      display: flex;
+      font-size: 0.8rem;
+      height: 4vh;
+      width: 10vw;
+      margin: auto;
+      justify-content: center;
+    }
+
+    .menu-planeje i {
+        font-size: 1.2rem;  
+        margin: auto; 
     }
 }
