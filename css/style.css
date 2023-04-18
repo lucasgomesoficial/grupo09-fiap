@@ -66,6 +66,7 @@ a:hover {
     color: var(--color-light);
     background-color: var(--color-secondary);
     border-radius: var(--border-radius-small);
+}
 
 .menu-item:hover {
     color: var(--color-white);
