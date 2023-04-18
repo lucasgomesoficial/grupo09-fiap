@@ -62,6 +62,11 @@ ol {
     padding: 10px;
 }
 
+a:hover {
+    color: var(--color-light);
+    background-color: var(--color-secondary);
+    border-radius: var(--border-radius-small);
+
 .menu-item:hover {
     color: var(--color-white);
     background-color:var(--color-pink);                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   ;
@@ -781,7 +786,7 @@ img {
     }
 
     .menu-mobile .btn {
-        background-color: #00000002;
+        background-color: #00000000;
         border: none;
         padding: 0px;
         margin-right: 0px;
@@ -792,7 +797,7 @@ img {
     }
 
     .dropdown-item:hover {
-        background-color: #a2868f;
+        background-color:var(--color-secondary);
     }
 
     body {
