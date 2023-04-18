@@ -54,7 +54,7 @@ a {
 
 a:hover {
     color: var(--color-light);
-    background-color: #f5e8e837;
+    background-color: var(--color-secondary);
     border-radius: var(--border-radius-small);
 }
 
@@ -319,7 +319,7 @@ img {
     }
 
     .menu-mobile .btn {
-        background-color: #00000002;
+        background-color: #00000000;
         border: none;
         padding: 0px;
         margin-right: 0px;
@@ -330,7 +330,7 @@ img {
     }
 
     .dropdown-item:hover {
-        background-color: #a2868f;
+        background-color:var(--color-secondary);
     }
 
     body {
