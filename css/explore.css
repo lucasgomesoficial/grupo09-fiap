@@ -194,7 +194,9 @@ a {
     font-weight: var(--font-weight-bold);
     margin-right: 1.813rem;
     text-align: start;
-    /* justify-content: space-around; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .btn-menu-mais {
@@ -207,6 +209,13 @@ a {
     padding: 2rem 1rem;
     font-weight: var(--font-weight-bold);
     text-align: start;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dropdown {
+    display: none;
 }
 
 .galeriasp {
@@ -221,6 +230,10 @@ a {
     background-color: #D9D9D95C;
     border-radius: var(--border-radius-small);
     /* border: 2px solid; */
+}
+
+.carousel-mobile-sp {
+    display: none;
 }
 
 .galeriasp img {
@@ -242,8 +255,6 @@ a {
     width: 68%;
     height: 100%;
     margin-left: 4.938rem;
-    /* padding-bottom: 1.25rem; */
-    /* border: 2px solid; */
     display: flex;
     flex-direction: column;
     gap: 1.25rem;
@@ -355,112 +366,160 @@ a {
 /* Fim Footer */
 
 /* responsivo */
-@media  (max-width: 950px) {
+@media (max-width: 950px) {
     .header-page {
         height: auto;
         padding: 1rem;
         flex-direction: column;
         align-items: center;
-        }
-        
-        .inputSearch {
+    }
+
+    .inputSearch {
         width: 90%;
-        }
-        
-        .input-buscar {
+    }
+
+    .input-buscar {
         width: 100%;
-        }
-        
-        .header-menu {
+    }
+
+    .header-menu {
         margin-top: 1.5rem;
-        }
-        
-        .btn-login {
+    }
+
+    .btn-login {
         margin-right: 1.5rem;
-        }
-        
-        .title-div {
+    }
+
+    .title-div {
         width: 100%;
         margin-bottom: 1.5rem;
-        }
-        
-        .menu-sp {
+    }
+
+    .menu-sp {
         width: 100%;
         margin-left: 0;
         flex-wrap: wrap;
         justify-content: center;
-        }
-        
-        .btn-menu {
+    }
+
+    .btn-menu {
         width: 45%;
         margin-right: 1rem;
         margin-bottom: 1.5rem;
-        }
-        
-        .btn-menu-mais {
-            width: 45%;
-            margin-right: 1rem;
-            margin-bottom: 1.5rem;
-        }
-        }
+    }
 
-        @media  (max-width: 950px){
-            .footer{
-            height: auto;
-            padding: 1rem;
-            flex-direction: column;
-            align-items: center;
-            }
-        }
-    
+    .btn-menu-mais {
+        width: 45%;
+        margin-right: 1rem;
+        margin-bottom: 1.5rem;
+    }
+}
 
-
-    @media (max-width: 768px) {
-        .header-page {
+@media (max-width: 950px) {
+    .footer {
         height: auto;
         padding: 1rem;
         flex-direction: column;
         align-items: center;
-        }
-        
-        .inputSearch {
-        width: 80%;
-        }
-        
-        .input-buscar {
+    }
+}
+
+
+
+@media (max-width: 768px) {
+
+    /* Cabeçalho */
+    .header-page {
         width: 100%;
-        }
-        
-        .header-menu {
-        margin-top: 1rem;
-        }
-        
-        .btn-login {
+        height: 15rem;
+        padding: 1rem;
+        display: flex;
+        align-items: center;
+    }
+
+    .header-title {
+        font-size: 1.875rem;
+    }
+
+    .inputSearch {
+        width: 75%;
+    }
+
+    .input-buscar {
+        width: 100%;
+    }
+
+    .btn-login {
         margin-right: 1rem;
-        }
-        
-        .title-div {
+    }
+
+    /* Fim Cabeçalho */
+
+    /* Explore SP */
+    .title-div {
+        width: 95%;
+        border: 1px solid;
+    }
+
+    .title-div h1 {
+        font-size: 1.875rem;
+        left: 0.5rem;
+    }
+
+    .title-span {
+        font-size: 1.875rem;
+    }
+
+    .menu-sp {
+        display: none;
+    }
+
+    .dropdown {
+        display: block;
+    }
+
+    /* Fim Explore SP */
+
+    /* Sobre SP */
+    .sobre-sp {
         width: 100%;
-        margin-bottom: 1rem;
-        }
-        
-        .menu-sp {
-        width: 100%;
-        margin-left: 0;
-        flex-wrap: wrap;
-        justify-content: center;
-        }
-        
-        .btn-menu {
-        width: 45%;
-        margin-right: 0.5rem;
-        margin-bottom: 1rem;
-        }
-        
-        .btn-menu-mais {
-            width: 45%;
-            margin-right: 0.5rem;
-            margin-bottom: 1rem;
-        }
-        }
+    }
+
+    .sobre-sp div {
+        margin-left: 1.85rem;
+        width: 80%;
+        gap: 0.5rem;
+        /* border: 1px solid; */
+    }
+
+    .galeriasp {
+        display: none;
+    }
+
+    .carousel-sp {
+        width: 90%;
+        display: block;
+    }
+
+    /* Fim Sobre SP */
+
+    /* Onde Hospedar */
+    .onde-hospedar h2 {
+        width: 80%;
+        margin-left: 1.85rem;
+        font-size: 1.875rem;
+        /* border: 1px solid; */
+    }
+
+    .onde-hospedar p {
+        display: none;
+    }
+
+
+    /* Fim Onde Hospedar */
+
+
+
+}
+
 /* responsivo */
