@@ -913,6 +913,10 @@ footer {
     }
   }
 
+  .carrossel{
+    background-color: var(--color-secondary900);
+  }
+
   .menu-planeje li{
     font-size: var(--p-font-size-small);
     text-align: center;
