@@ -742,6 +742,141 @@ hr {
 }
 
 footer {
-  height: 24.8rem;
-  background-color: var(--color-primary100);
+  display: flex;
+  justify-content: center;
+  background-color: #ffdede;
+}
+
+.content-footer {
+  width: 98%;
+  display: flex;
+  justify-content: center;
+  padding: 3.75rem 0;
+  gap: 8rem;
+}
+
+@media (min-width: 1440px) {
+  .content-footer {
+    width: 1440px;
+  }
+}
+
+.footer-items-social {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.footer-items-social h4 {
+  font-size: 30px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.footer-items-social span {
+  display: flex;
+  gap: 1rem;
+}
+
+.footer-items-social a {
+  color: var(--color-dark);
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.footer-items-social a:hover {
+  color: var(--color-primary900);
+}
+
+.socialIcons {
+  font-size: 1.5rem;
+}
+
+.footer-items-links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.footer-items-links h4 {
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.43);
+  font-weight: var(--font-weight-bold);
+  margin: 0;
+}
+
+.nav-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding-left: 0;
+  margin: 0;
+}
+
+.a-footer {
+  text-decoration: none;
+  color: var(--color-dark);
+  font-weight: var(--font-weight-bold);
+  font-size: 15px;
+  transition: var(--transition);
+}
+
+.a-footer:hover {
+  color: var(--color-primary900);
+}
+
+.footer-items-blog {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.footer-items-blog h4 {
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.43);
+  font-weight: var(--font-weight-bold);
+  margin: 0;
+}
+
+.footer-images-blog {
+  display: flex;
+  gap: 1rem;
+}
+
+.ancora-image-blog {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 8rem;
+  cursor: pointer;
+
+  font-size: 0.625rem;
+  font-weight: var(--font-weight-bold);
+  text-align: center;
+  color: var(--color-dark);
+  transition: var(--transition);
+}
+
+.ancora-image-blog:hover {
+  color: var(--color-primary900);
+  transform: scale(1.03);
+}
+
+.img-footer {
+  border-radius: 10px;
+  width: 129px;
+  justify-content: space-between;
+}
+
+@media (max-width: 800px) {
+  .content-footer {
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+    padding: 2rem 0;
+  }
 }
