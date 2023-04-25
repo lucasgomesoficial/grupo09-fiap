@@ -101,7 +101,7 @@ header {
 
 @media (max-width: 1000px) {
   .iconSearch {
-    display: none;
+    display: none !important;
   }
 
   .search {
@@ -135,6 +135,7 @@ header {
   height: 4rem;
   background-color: var(--color-dark);
   color: var(--color-light);
+  border: none;
   border-radius: var(--border-radius-small);
   font-size: var(--p-font-size-large);
   font-weight: var(--font-weight-bold);
@@ -150,6 +151,11 @@ header {
 .iconHeart {
   font-size: 1.875rem;
   cursor: pointer;
+  transition: var(--transition);
+}
+
+.iconHeart:hover {
+  color: var(--color-primary900);
 }
 
 @media (max-width: 1000px) {
