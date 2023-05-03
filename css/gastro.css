@@ -40,6 +40,8 @@
     font-family: var(--font-family);
   }
 
+  /* Header */
+
   .container-header{
     display: flex;
     justify-content: space-around;
@@ -52,6 +54,7 @@
     font-size: var(--h3-font-size);  
     font-family: var(--font-family);
     font-weight: var(--font-weight-bold );
+    margin-left: 20px;
 }
 
 .inputSearch{
@@ -100,7 +103,7 @@
     display: none;
   }
 
-@media (max-width: 1200px){
+@media (max-width: 900px){
     .search{
         display: none;
     }
@@ -128,7 +131,7 @@
       }
     
       .menu-mobile .btn {
-        background-color: #00000000;
+        background-color: transparent !important;        
         border: none;
         padding: 0px;
         margin-right: 0px;
@@ -140,8 +143,8 @@
      
     
       .icon-menu{
-        color: #ff0055;
-          }
+        color: var(--color-primary900);
+      }
 
       .iconSearch{
         display: flex;
@@ -149,12 +152,9 @@
         align-items: right;
         margin: 20px 30px;
       }
-      
-     
-    
-      
-    
 }
+  /* Header */
+
 
 
 
