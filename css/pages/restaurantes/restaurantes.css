@@ -1,0 +1,38 @@
+.content-page {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+@media (min-width: 1440px) {
+  .content-page {
+    width: 1440px;
+  }
+}
+
+.content-page-header {
+  display: flex;
+  gap: 3.5rem;
+}
+
+.carousel-image {
+  width: 39rem;
+  height: 20.5rem;
+}
+
+.content-title {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 100%;
+}
+.btn-menu{
+    color: #FF0055;
+    background-color: #EEEEEE;
+    font-size: 1.25rem;
+}
+.btn-site{
+    color: #FFFFFF;
+    background-color: #FF0055;
+    font-size: 1.25rem;
+}
