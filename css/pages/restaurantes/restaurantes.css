@@ -1,3 +1,117 @@
+header {
+  background-color: var(--color-primary100);
+}
+
+.container-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 8.75rem;
+}
+
+@media (min-width: 1440px) {
+  .container-header {
+    width: 1440px;
+  }
+}
+
+.inputSearch {
+  width: 38rem;
+  height: 4.25rem;
+  border: none;
+}
+
+.iconSearch {
+  position: absolute;
+  margin: 1.3rem 2rem;
+  font-size: 1.563rem;
+}
+
+.search {
+  width: 100%;
+  height: 100%;
+  border-radius: 1.875rem;
+  text-align: center;
+  font-size: 1.563rem;
+  color: #000000;
+  border: none;
+  box-shadow: none;
+}
+
+.container-loginFavourite {
+  display: flex;
+  align-items: center;
+  gap: 4.75rem;
+}
+
+.btn-login {
+  width: 11rem;
+  height: 4.25rem;
+  border: none;
+  background-color: #000000;
+  color: #ffffff;
+  border-radius: 0.5rem;
+  font-size: 1.875rem;
+  transition: var(--transition);
+}
+
+.btn-login:hover {
+  background-color: #9f99999f;
+  color: #000000;
+}
+
+.iconHeart {
+  font-size: 1.563rem;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.iconHeart:hover {
+  font-weight: var(--font-weight-bold);
+}
+
+.menu-mobile {
+  display: none;
+}
+
+.navegacao {
+  margin: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.item {
+  margin-left: 10px;
+}
+
+.botao:hover {
+  background-color: #cccccc;
+  color: #000;
+}
+
+.botao {
+  border-radius: 10px;
+  border: 1px solid #000;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.drop {
+  margin-left: 10px;
+  margin-bottom: 20px;
+}
+
+.button {
+  height: 80px;
+  background-color: #eeeeee;
+}
+
+.icon1 {
+  margin-right: 20px;
+}
+
 .content-page {
   display: flex;
   flex-direction: column;
@@ -21,18 +135,158 @@
 }
 
 .content-title {
-    display: flex;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 100%;
+}
+.btn-menu {
+  color: #ff0055;
+  background-color: #eeeeee;
+  font-size: 1.25rem;
+}
+.btn-site {
+  color: #ffffff;
+  background-color: #ff0055;
+  font-size: 1.25rem;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  background-color: #ffdede;
+}
+
+.content-footer {
+  width: 98%;
+  display: flex;
+  justify-content: space-around;
+  padding: 3.75rem 0;
+  gap: 8rem;
+}
+
+@media (min-width: 1440px) {
+  .content-footer {
+    width: 1440px;
+  }
+}
+
+.footer-items-social {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.footer-items-social h4 {
+  font-size: 30px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.footer-items-social span {
+  display: flex;
+  gap: 1rem;
+}
+
+.footer-items-social a {
+  color: var(--color-dark);
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.footer-items-social a:hover {
+  color: var(--color-primary900);
+}
+
+.socialIcons {
+  font-size: 1.5rem;
+}
+
+.footer-items-links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.footer-items-links h4 {
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.43);
+  font-weight: var(--font-weight-bold);
+  margin: 0;
+}
+
+.nav-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding-left: 0;
+  margin: 0;
+}
+
+.a-footer {
+  text-decoration: none;
+  color: var(--color-dark);
+  font-weight: var(--font-weight-bold);
+  font-size: 15px;
+  transition: var(--transition);
+}
+
+.a-footer:hover {
+  color: var(--color-primary900);
+}
+
+.footer-items-blog {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.footer-items-blog h4 {
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.43);
+  font-weight: var(--font-weight-bold);
+  margin: 0;
+}
+
+.footer-images-blog {
+  display: flex;
+  gap: 1rem;
+}
+
+.ancora-image-blog {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 8rem;
+  cursor: pointer;
+
+  font-size: 0.625rem;
+  font-weight: var(--font-weight-bold);
+  text-align: center;
+  color: var(--color-dark);
+  transition: var(--transition);
+}
+
+.ancora-image-blog:hover {
+  color: var(--color-primary900);
+  transform: scale(1.03);
+}
+
+.img-footer {
+  border-radius: 10px;
+  width: 129px;
+  justify-content: space-between;
+}
+
+@media (max-width: 800px) {
+  .content-footer {
     flex-direction: column;
-    gap: 1.5rem;
-    width: 100%;
-}
-.btn-menu{
-    color: #FF0055;
-    background-color: #EEEEEE;
-    font-size: 1.25rem;
-}
-.btn-site{
-    color: #FFFFFF;
-    background-color: #FF0055;
-    font-size: 1.25rem;
+    align-items: center;
+    gap: 4rem;
+    padding: 2rem 0;
+  }
 }
