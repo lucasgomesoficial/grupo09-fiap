@@ -205,8 +205,8 @@ body {
   background-color: #EEEEEE;
 }
 
-.botao:hover {
-  background-color: #cccccc;
+.botao:hover{
+  background-color: #f7913744;
   color: #000;
 }
 
@@ -332,7 +332,14 @@ a {
 
 
  .cardssel{
-  max-width: 2000px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+ }
+ 
+ .car{
+  max-width: 1000px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -340,7 +347,7 @@ a {
 
 /* Carrosel */
 
-@media(max-width: 900px) {
+@media(max-width: 1000px) {
   .car {
     display: none;
   }
