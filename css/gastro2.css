@@ -360,6 +360,7 @@ a {
     width: 150px;
     height: 35px;
   }
+}
   
 
 @media(max-width: 900px){
@@ -435,14 +436,9 @@ a {
 
 }
 }
-
-
 /* Restaurantes */
 
 /*Footer */
-
-
-
 footer {
   display: flex;
   justify-content: space-around;
@@ -579,4 +575,4 @@ footer {
 
 }
 
-/*Footer */
+/*footer*/
