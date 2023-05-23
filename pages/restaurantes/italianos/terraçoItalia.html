@@ -30,66 +30,33 @@
 
   <body>
     <header>
-      <div class="container-fluid container-header">
-        <h1 class="h4 font-weight-bold" style="margin: 0">GuTraveller</h1>
+      <div class=" container-fluid container-header">
+        <h1 class="h3 header-title">GuTraveller</h1>
         <div class="inputSearch">
-          <i
-            class="fa-solid fa-magnifying-glass iconSearch"
-            aria-hidden="true"
-          ></i>
-          <input
-            class="search"
-            type="text"
-            placeholder="Para onde você quer ir?"
-          />
+          <i class="fa-solid fa-magnifying-glass iconSearch" aria-hidden="true"></i>
+          <input class="search" type="text" placeholder="Para onde você quer ir?" />
         </div>
         <div class="container-loginFavourite">
-          <button class="btn-login font-weight-bold">Login</button>
+          <button class="btn-login">Login</button>
           <i class="fa-regular fa-heart iconHeart"></i>
         </div>
 
-        <div class="dropdown menu-mobile">
-          <i
-            class="fa-solid fa-magnifying-glass mr-4 iconSearch-mobile"
-            aria-hidden="true"
-          ></i>
-          <a
-            class="btn"
-            href="#"
-            role="button"
-            data-toggle="dropdown"
-            aria-expanded="false"
-          >
+        <div class="menu-mobile dropdown">
+          <span class="lupa material-symbols-outlined">search</span>
+          <button class="btn btn-secondary" data-bs-toggle="dropdown" aria-expanded="false">
             <i class="fa-solid fa-bars icon-menu"></i>
-          </a>
-          <div class="dropdown-menu">
-            <a class="dropdown-item" href="#">
-              Hotéis
-              <i class="fa-solid fa-bed fa-pull-right"></i>
-            </a>
-            <a class="dropdown-item" href="#">
-              O que fazer
-              <i class="fa-solid fa-city fa-pull-right"></i>
-            </a>
-            <a class="dropdown-item" href="#">
-              Aluguel de carros
-              <i class="fa-solid fa-car fa-pull-right"></i>
-            </a>
-            <a class="dropdown-item" href="#">
-              Restaurantes
-              <i class="fa-solid fa-burger fa-pull-right"></i>
-            </a>
-            <a class="dropdown-item" href="#">
-              Voos
-              <i class="fa-solid fa-plane fa-pull-right"></i>
-            </a>
-            <a class="dropdown-item" href="#">
-              Cruzeiros
-              <i class="fa-solid fa-ship fa-pull-right"></i>
-            </a>
-            <a class="dropdown-item" href="#">Login</a>
-          </div>
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#"><span class="outro"> Fazer Login</span></a></li>
+            <li><a class="dropdown-item" href="#">Hotéis</a></li>
+            <li><a class="dropdown-item" href="#">Voos</a></li>
+            <li><a class="dropdown-item" href="#">Cruzeiros</a></li>
+            <li><a class="dropdown-item" href="#">O que fazer</a></li>
+            <li><a class="dropdown-item" href="#">Aluguel de carro</a></li>
+            <li><a class="dropdown-item" href="#">Restaurantes</a></li>
+          </ul>
         </div>
+      </div>
       </div>
     </header>
     <div
@@ -299,50 +266,36 @@
     <!-- Segunda Coluna -->
 
     <footer>
-      <div class="content-footer">
-        <div class="footer-items-social">
-          <h4>GuTraveller</h4>
-          <span>
-            <a href="">
-              <i class="fa-brands fa-facebook socialIcons"></i>
-            </a>
-            <a href="">
-              <i class="fa-brands fa-instagram socialIcons"></i>
-            </a>
-          </span>
+      <div class="footer-items-social">
+        <h4>GuTraveller</h4>
+        <div class="iconSocial">
+          <i class="fa-brands fa-facebook socialIcons"></i>
+          <i class="fa-brands fa-instagram socialIcons"></i>
         </div>
+      </div>
 
-        <div class="footer-items-links">
-          <h4>Sobre o GuTraveller</h4>
-          <nav>
-            <ul class="nav-footer">
-              <li><a class="a-footer" href="#page">Quem Somos</a></li>
-              <li><a class="a-footer" href="#explore">Fale Conosco</a></li>
-              <li><a class="a-footer" href="hero">Seja um Traveller</a></li>
-              <li><a class="a-footer" href="gallery">Planeje sua viagem</a></li>
-            </ul>
-          </nav>
-        </div>
+      <div class="footer-items-links">
+        <h4>Sobre o GuTraveller</h4>
+        <nav>
+          <ul class="nav-footer">
+            <li><a class="a-footer" href="#page">Quem Somos</a></li>
+            <li><a class="a-footer" href="#explore">Fale Conosco</a></li>
+            <li><a class="a-footer" href="#hero">Seja um Traveller</a></li>
+            <li><a class="a-footer" href="#gallery">Planeje sua viagem</a></li>
+          </ul>
+        </nav>
+      </div>
 
-        <div class="footer-items-blog">
-          <h4>Conheça nosso blog</h4>
-          <div class="footer-images-blog">
-            <a class="ancora-image-blog">
-              <img
-                src="../../../images/barraca-camping.png"
-                alt="Bares em São Paulo"
-                class="img-footer"
-              />
-              Acampar é a sua praia?
-            </a>
-            <a class="ancora-image-blog">
-              <img
-                src="../../../images/bares-sp.png"
-                alt="Acampamento"
-                class="img-footer"
-              />
-              Melhores bares de São Vicente
-            </a>
+      <div class="footer-items-blog">
+        <h4>Conheça o Blog do Gulliver</h4>
+        <div class="footer-images-blog">
+          <div>
+            <img src="../../../images/barraca-camping.png" alt="Bares em São Paulo" class="img-footer" />
+            <p>Acampar é a sua praia?</p>
+          </div>
+          <div>
+            <img src="../../../images/bares-sp.png" alt="Acampamento" class="img-footer" />
+            <p>Melhores bares de São Vicente</p>
           </div>
         </div>
       </div>
