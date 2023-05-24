@@ -34,6 +34,9 @@
   --font-weight-bold: 700;
   --font-family: "Inter", sans-serif;
 }
+html{
+  overflow-x: hidden;
+}
 
 body {
   font-family: var(--font-family);
@@ -236,10 +239,6 @@ header {
   line-height: 1.361rem;
 }
 
-.disabled {
-  opacity: 0.5;
-}
-
 @media (max-width: 1300px) {
   .menu-item,
   .menu-item-last {
@@ -305,8 +304,8 @@ header {
 }
 
 .disabled {
-  opacity: 0.5;
   cursor: not-allowed;
+  opacity: 0.6;
 }
 
 
@@ -365,6 +364,7 @@ header {
   justify-content: center;
   align-items: center;
   width: 100%;
+  margin-top: 30px;
 }
 
 .titulo-pagina span {
