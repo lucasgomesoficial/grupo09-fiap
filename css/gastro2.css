@@ -445,14 +445,19 @@ header {
 
   .trattoria {
     background-image: url(/images/trattoria-vini-1.png);
+    background-position: 80%;
   }
 
   .circolo {
     background-image: url(/images/restaurante-circolo.png);
+    background-position: 80%;
+
   }
 
   .terraco {
     background-image: url(/images/restaurante-italia.png);
+    background-position: 80%;
+
   }
 
   .info-res-mobile {
@@ -460,22 +465,40 @@ header {
     position: absolute;
     bottom: 0;
     width: 100%;
-    padding: 30px;
+    height: 50%;
+    padding: 10px;
+    display: flex;
+    border-radius: 10px;
   }
 
   .info-res-mobile span {
     color: var(--color-primary900);
+    margin-left: 7px;
   }
 
   .info-res-mobile h2 {
-    font-size: var(--h1-font-size);
+    font-size: var(--h2-font-size);
     font-weight: var(--font-weight-bold);
+    width: 100%;
+    display: flex;
+    flex-direction: row;
   }
 
   .info-res-mobile i {
     color: #cfad00;
-    font-size: var(--h2-font-size);
+    font-size: var(--h3-font-size);
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    align-items: end;
   }
+
+  .star-mobile{
+    display: flex;
+    justify-content: end;
+  }
+
+
 }
 
 /* Restaurantes */
