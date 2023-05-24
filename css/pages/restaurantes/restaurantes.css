@@ -180,6 +180,7 @@ header {
 }
 
 @media (max-width: 1300px) {
+
   .menu-item,
   .menu-item-last {
     width: 8rem;
