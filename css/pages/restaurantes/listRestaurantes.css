@@ -386,6 +386,14 @@ header {
   border-radius: 10px;
   width: 150px;
   height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: var(--transition);
+}
+
+.btn-saiba-mais:hover {
+  opacity: 0.5;
 }
 
 .res-mobile {
