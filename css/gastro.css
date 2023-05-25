@@ -529,10 +529,11 @@ footer {
   font-weight: var(--font-weight-bold);
   font-size: 15px;
   background-color: #00000000;
+  transition: var(--transition);
 }
 
 .a-footer:hover {
-  text-decoration: underline;
+  text-decoration: underline !important;
 }
 
 .footer-items-blog {
