@@ -78,11 +78,7 @@ header {
   display: none;
 }
 
-@media (max-width: 900px) {
-  .search {
-    display: none;
-  }
-
+@media (max-width: 1100px) {
   .container-loginFavourite {
     display: none;
   }
@@ -125,6 +121,7 @@ header {
 
   .lupa {
     cursor: pointer;
+    margin-bottom: 21px;
   }
 
   .item,
@@ -180,7 +177,6 @@ header {
 }
 
 @media (max-width: 1300px) {
-
   .menu-item,
   .menu-item-last {
     width: 8rem;
@@ -189,7 +185,7 @@ header {
   }
 }
 
-@media (max-width: 1050px) {
+@media (max-width: 1100px) {
   .navegacao {
     display: none;
   }
@@ -218,7 +214,7 @@ header {
   gap: 1rem;
 }
 
-@media (max-width: 1050px) {
+@media (max-width: 1100px) {
   .wrapper-content-page {
     padding: 0;
   }
@@ -253,7 +249,7 @@ header {
   }
 }
 
-@media (max-width: 1050px) {
+@media (max-width: 1100px) {
   .carousel-image {
     display: flex;
     justify-content: center;
@@ -267,7 +263,7 @@ header {
   width: 100%;
 }
 
-@media (max-width: 1050px) {
+@media (max-width: 1100px) {
   .content-title {
     align-items: center;
   }
@@ -290,7 +286,7 @@ header {
   }
 }
 
-@media (max-width: 1050px) {
+@media (max-width: 1100px) {
   .date-button {
     flex-direction: column;
     gap: 1.75rem;
@@ -310,33 +306,42 @@ header {
   width: 12.25rem;
   height: 3.464rem;
   font-size: 1.25rem;
+  transition: var(--transition);
+}
+
+.btn-site {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  background-color: #ff0055;
+  width: 12.25rem;
+  height: 3.464rem;
+  font-size: 1.25rem;
+  transition: var(--transition);
+}
+
+.btn-site:hover {
+  color: #000000;
 }
 
 @media (max-width: 1300px) {
-  .btn-menu {
+  .btn-menu,
+  .btn-site {
     width: 10rem;
     height: 2.5rem;
     font-size: 1rem;
   }
 }
 
-.btn-menu:nth-child(2) {
-  color: #ffffff;
-  background-color: #ff0055;
-}
-
-@media (max-width: 1050px) {
-  .btn-menu {
-    background-color: #ffffff;
+@media (max-width: 1100px) {
+  .btn-menu,
+  .btn-site {
     width: 9rem;
     height: 2.5rem;
     font-size: 0.813rem;
     border-radius: 0.625rem;
   }
-}
-
-.btn-menu:nth-child(2):hover {
-  color: #000000;
 }
 
 .info-content {
@@ -354,7 +359,7 @@ header {
   }
 }
 
-@media (max-width: 1050px) {
+@media (max-width: 1100px) {
   .info-content {
     display: flex;
     flex-direction: column;
@@ -478,10 +483,11 @@ footer {
   font-weight: var(--font-weight-bold);
   font-size: 15px;
   background-color: #00000000;
+  transition: var(--transition);
 }
 
 .a-footer:hover {
-  text-decoration: underline;
+  text-decoration: underline !important;
 }
 
 .footer-items-blog {
