@@ -198,7 +198,7 @@ img {
   background-color: #ffffff2f;
 }
 
-.planeje-viagem {
+#planeje-viagem {
   background-color: #fd5758;
   padding-bottom: 80px;
   padding-top: 30px;
@@ -245,11 +245,7 @@ img {
   padding: 0 100px 0 100px;
 }
 
-.menu-itens-1,
-.menu-itens-2,
-.menu-itens-3,
-.menu-itens-4,
-.menu-itens-5 {
+.menu-itens {
   background: rgba(255, 255, 255, 0.54);
   height: 10%;
   width: 18%;
@@ -262,18 +258,20 @@ img {
   font-weight: 700;
   font-size: var(--p-font-size-large);
   color: var(--color-dark);
+  transition: var(--transition);
 }
 
-.menu-itens-5 {
+.menu-itens:nth-child(5) {
   width: 25%;
 }
 
-.menu-itens-1,
-.menu-itens-2,
-.menu-itens-3,
-.menu-itens-4,
-.menu-itens-5 {
-  cursor: pointer;
+.menu-itens:nth-child(3):hover {
+  opacity: 0.8;
+}
+
+.disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
 }
 
 .container-busca {
@@ -644,7 +642,7 @@ footer {
   }
 }
 
-.descubra {
+#descubra {
   width: 100%;
   display: flex;
   gap: 82px;
@@ -656,7 +654,7 @@ footer {
   flex-direction: column;
 }
 
-.descubra h3 {
+#descubra h3 {
   width: 30%;
   padding: 30px 30px;
   margin-top: 70px;
@@ -665,7 +663,7 @@ footer {
   font-family: var(--font-family);
 }
 
-.descubra p {
+#descubra p {
   width: 90%;
   font-size: var(--p-font-size-large);
   color: var(--color-dark);
